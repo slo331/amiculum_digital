@@ -1,3 +1,5 @@
+include ../_modules/organisms/header/header
+
 //- Custom Configuration
 block config
   //- Otherwise default to relative pathing
@@ -27,8 +29,12 @@ body
   <p class='browsehappy'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
+  header
+    +header()
+
   .site-wrapper
-    block content
+    .container
+      block content
 
   block scripts
     script(src= '/assets/scripts/main.js')

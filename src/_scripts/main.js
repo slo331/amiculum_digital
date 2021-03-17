@@ -1,9 +1,11 @@
 // Main javascript entry point
 // Should handle bootstrapping/starting application
 'use strict';
-import Button from '../_modules/atoms/button/button';
+import Carousel from '../_modules/molecules/carousel/carousel';
 
 $(() => {
-  new Button();
+  if($('.carousel').length) {
+    new Carousel();
+  }
 });
 

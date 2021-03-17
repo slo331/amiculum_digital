@@ -1,5 +1,6 @@
 // Normalize styles
 @import '../../node_modules/normalize.css/normalize';
+@import '../../node_modules/slick-carousel/slick/slick';
 
 @import "./_fonts";
 
@@ -12,6 +13,7 @@ $bpDesktop: 1024px;
 $bpLgDesktop: 1440px;
 
 // Fonts
+$primaryfont: Verdana, Arial, Helvetica, sans-serif;
 $base: 16;
 $thin: 300;
 $normal: 400;
@@ -73,7 +75,7 @@ $white: #ffffff;
 }
 
 body {
-  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-family: $primaryfont;
   font-size: calc-em(16);
   margin: 0;
   padding: 0;
@@ -91,8 +93,19 @@ body {
       max-width: 1300px;
     }
   }
+
+  h1 {
+    font-size: calc-em(64);
+    font-weight: $bold;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    color: $white;
+  }
 }
 
 
 
 @import "../_modules/atoms/button/button";
+@import "../_modules/molecules/carousel/carousel";
+@import "../_modules/molecules/rte/rte";
+@import "../_modules/organisms/header/header";

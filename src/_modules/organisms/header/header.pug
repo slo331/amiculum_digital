@@ -1,6 +1,11 @@
 mixin header(spec)
-  - spec = spec || {}
-  - spec.__class = spec.__class || ''
+	- spec = spec || {}
+	- spec.__class = spec.__class || ''
 
-  div(class=spec.__class)&attributes(attributes)
-    p This is an example paragraph for the header module
+	.header(class=spec.__class)&attributes(attributes)
+		.container
+			.header-wrap
+				.header-logo
+					a(href="/" aria-label="Home")
+						img(src="/assets/images/_logo.png" alt="Logo Image" width="56" height="56")
+				.header-title Brand Name

@@ -1,1 +1,123 @@
-//carousel styles 
+//carousel styles
+.carousel {
+  $p: &;
+  position: relative;
+
+  &-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    #{$p}-container {
+      width: 100%;
+      height: 470px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: center;
+          object-position: center center;
+        }
+      }
+
+      .title {
+        position: absolute;
+        width: auto;
+        text-align: center;
+        vertical-align: middle;
+        color: $white;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        opacity: .5;
+        padding: 0 2em;
+      }
+    }
+
+    .slick-arrow {
+      position: absolute;
+      z-index: 2;
+      text-indent: -99999px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: 11;
+        display: block;
+        height: 25px;
+        width: 25px;
+        border-top: 4px solid $white;
+        border-left: 4px solid $white;
+      }
+
+      &:hover,
+      &:focus {
+        outline: none;
+      }
+
+      &.slick-prev {
+        left: 30px;
+        
+        &:before {
+          left: 0;
+          transform: rotate(-45deg);
+        }
+      }
+
+      &.slick-next {
+        right: 30px;
+
+        &:before {
+          right: 0;
+          transform: rotate(135deg);
+        }
+      }
+    }
+
+    .slick-dots {
+      position: absolute;
+      bottom: 30px;
+      width: 100%;
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+
+      .slick-active {
+        button {
+          background: #7F7F7F;
+        }  
+      }
+
+      button {
+        border: none;
+        background: #414141;
+        margin: 0 4px;
+        border-radius: 10rem;
+        text-indent: -99999px;
+        height: 10px;
+        width: 10px;
+        padding: 1px;
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+          outline: none;
+          background: #7F7F7F;
+        }
+      }
+    }
+  }
+}

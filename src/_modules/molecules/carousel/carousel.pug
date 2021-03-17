@@ -1,6 +1,13 @@
 mixin carousel(spec)
   - spec = spec || {}
   - spec.__class = spec.__class || ''
+  - spec.__carousel = spec.__carousel || ''
 
-  div(class=spec.__class)&attributes(attributes)
-    p This is an example paragraph for the carousel module
+  section.carousel(class=spec.__class)&attributes(attributes)
+    .carousel-wrap
+      each item in spec.__carousel
+        .carousel-item
+          .carousel-container
+            .img
+              img(src=item.img alt=item.title width="160" height="112")
+            .title= item.title

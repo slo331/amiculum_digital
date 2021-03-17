@@ -1,8 +1,31 @@
 mixin button(spec)
-  - site = htmlWebpackPlugin.options
-  - spec = spec || {}
-  - spec.__class = spec.__class || ''
-  - spec.link  = spec.link || '#'
+	- spec = spec || {}
+	- spec.__class = spec.__class || ''
+	- spec.__type = spec.__type || 'anchor'
+	- spec.__link = spec.__link || 'javascript:void(0)'
+	- spec.__target = spec.__target || '_self'
+	- spec.__text = spec.__text || ''
+	- spec.__iconAfter = spec.__iconAfter || ''
+	- spec.__iconBefore = spec.__iconBefore || ''
 
-  a.button(href=spec.link class=spec.__class)&attributes(attributes)
-    p=spec.text
+	- var tag = 'button'
+	- var attributes = {"type" : "button"}
+
+	if spec.__type == 'anchor'
+		- tag = 'a'
+		- attributes = {"href": spec.__link, "target": spec.__target}
+
+	if spec.__type == 'span'
+		- tag = 'span'
+		- attributes = {}
+
+	#{tag}.btn&attributes(attributes)(class=spec.__class)
+		if spec.__iconBefore !== ''
+			span
+				i.icon(class=spec.__iconBefore)
+				span.btn__text=spec.__text
+		else
+			span
+				span.btn__text=spec.__text
+				if spec.__iconAfter !== ''
+					i.icon(class=spec.__iconAfter)
