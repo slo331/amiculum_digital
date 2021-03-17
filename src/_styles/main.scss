@@ -1,0 +1,98 @@
+// Normalize styles
+@import '../../node_modules/normalize.css/normalize';
+
+@import "./_fonts";
+
+// Variables
+// Breakpoints
+$bpMobile: 320px;
+$bpLgMobile: 480px;
+$bpTablet: 768px;
+$bpDesktop: 1024px;
+$bpLgDesktop: 1440px;
+
+// Fonts
+$base: 16;
+$thin: 300;
+$normal: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+$ultra-bold: 900;
+
+// Colours
+$black: #1A1A1A;
+$gray: #2E2E2E;
+$white: #ffffff;
+
+// Mixins
+@function calc-em($target, $context: $base) {
+  @return $target / $context * 1em;
+}
+
+@mixin visuallyhidden() {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px; width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+@mixin mobile {
+  @media (max-width: $bpTablet - 1) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $bpTablet) and (max-width: $bpDesktop - 1) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $bpDesktop) {
+    @content;
+  }
+}
+
+@mixin lgDesktop {
+  @media (min-width: $bpLgDesktop) {
+    @content;
+  }
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: calc-em(16);
+  margin: 0;
+  padding: 0;
+  background: $black;
+
+  .container {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 20px;
+  
+    @include lgDesktop {
+      max-width: 1300px;
+    }
+  }
+}
+
+
+
+@import "../_modules/button/button";

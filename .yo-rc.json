@@ -1,0 +1,7 @@
+{
+  "generator-yolo": {
+    "project": "amiculum_digital",
+    "author": "Stephen Orioste",
+    "jsPreprocessor": "ES6(using babel)"
+  }
+}
