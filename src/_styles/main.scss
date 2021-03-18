@@ -232,7 +232,90 @@ body {
       }
 
       .image-widget + .image-widget {
-        margin: 0 0 0 10px;
+        margin: 10px 0 0 0;
+
+        @include tablet {
+          margin: 0 0 0 10px;
+        }
+
+        @include desktop {
+          margin: 0 0 0 10px;
+        }
+      }
+
+      &.flex {
+        display: flex;
+        align-items: flex-start;
+
+        .caption-wrap {
+          width: 20%;
+          padding: 0 2em 0 0;
+          display: none;
+
+          @include desktop {
+            display: block;
+          }
+          
+          .head {
+            margin: 0 2em 0 0;
+            width: 100%;
+            position: relative;
+
+            & + .head {
+              margin: 2em 0 0;
+            }
+
+            &::before {
+              content: '';
+              display: block;
+              position: absolute;
+              top: 0;
+              height: 2px;
+              width: 100%;
+              background: $white;
+            }
+
+            .title,
+            .desc {
+              text-align: right;
+              padding: 0;
+              width: 100%;
+            }
+
+            .title {
+              font-size: calc-em(16);
+              margin: 0 0 10px;
+              padding: 1em 0 0;
+            }
+
+            .desc {
+              font-size: calc-em(14);
+              color: $gray2;
+            }
+          }
+        }
+
+        .image-wrap {
+          margin: 0;
+          width: 100%;
+          display: block;
+
+          @include tablet() {
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+          }
+
+          @include desktop {
+            width: 80%;
+            display: flex;
+            align-items: flex-start;
+          }
+
+          .image-widget {
+            width: 100%;
+          }
+        }
       }
     }
   }
