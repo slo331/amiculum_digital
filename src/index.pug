@@ -112,29 +112,24 @@ block content
 				"__caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Ut a dolor convallis, scelerisque leo eu, tincidunt eros. Vestibulum quis ullamcorper augue. Cras vitae mattis libero, et cursus neque. Sed tincidunt fermentum vehicula."
 			})
 
-	section.gallery2-wrap
+	section.gallery-wrap
 		.container
 			.head
 				.title Modal 
 				.desc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. 
 
 			.row 
-				.gallery-item.col-md-12.col-sm-12.col-xs-12 
-					.row
-						.item.col-md-9.col-sm-9.col-xs-12
-							+image-widget({
-								"__id": "img-gallery2-1",
-								"__img": "/assets/images/img.png",
-								"__width": "800",
-								"__height": "450",
-								"__title": "Image Gallery-2 1",
-								"__caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Ut a dolor convallis, scelerisque leo eu, tincidunt eros. Vestibulum quis ullamcorper augue. Cras vitae mattis libero, et cursus neque. Sed tincidunt fermentum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Ut a dolor convallis, scelerisque leo eu, tincidunt eros. Vestibulum quis ullamcorper augue. Cras vitae mattis libero, et cursus neque. Sed tincidunt fermentum vehicula."
-							})
-						.item.col-md-3.col-sm-3.col-xs-12
-							.caption-wrap 
-								.title Image Caption
-								.desc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui 
-				.gallery-item.col-md-6.col-sm-6.col-xs-12 
+				.gallery-item.col-md-12.col-sm-12.col-xs-12
+					+image-widget({
+						"__id": "img-gallery2-1",
+						"__img": "/assets/images/img.png",
+						"__width": "800",
+						"__height": "450",
+						"__title": "Image Gallery-2 1",
+						"__caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Ut a dolor convallis, scelerisque leo eu, tincidunt eros. Vestibulum quis ullamcorper augue. Cras vitae mattis libero, et cursus neque. Sed tincidunt fermentum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Ut a dolor convallis, scelerisque leo eu, tincidunt eros. Vestibulum quis ullamcorper augue. Cras vitae mattis libero, et cursus neque. Sed tincidunt fermentum vehicula."
+					})
+					
+				.gallery-item.col-md-6.col-sm-6.col-xs-12
 					+image-widget({
 						"__id": "img-gallery2-2",
 						"__img": "/assets/images/img.png",
@@ -152,4 +147,38 @@ block content
 						"__title": "Image Gallery-2 3",
 						"__caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Ut a dolor convallis, scelerisque leo eu, tincidunt eros. Vestibulum quis ullamcorper augue. Cras vitae mattis libero, et cursus neque. Sed tincidunt fermentum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Ut a dolor convallis, scelerisque leo eu, tincidunt eros. Vestibulum quis ullamcorper augue. Cras vitae mattis libero, et cursus neque. Sed tincidunt fermentum vehicula."
 					})
-			
+	
+	section.hot-topics
+		.container
+			.head
+				.title Hot Topics
+				.desc Lorem ipsum dolor sit amet
+			.topics-wrap
+				.topics-list
+					.topic-card
+						.img
+							img(src="/assets/images/img.png" alt="Topic 1" width="235" height="150")
+						.info
+							.title Topic Title 1
+							.desc Lorem ipsum dolor sit amet, consectetur adipiscing elit
+					
+					.topic-card
+						.img
+							img(src="/assets/images/img.png" alt="Topic 2" width="235" height="150")
+						.info
+							.title Topic Title 2
+							.desc Lorem ipsum dolor sit amet, consectetur adipiscing elit
+
+					.topic-card
+						.img
+							img(src="/assets/images/img.png" alt="Topic 3" width="235" height="150")
+						.info
+							.title Topic Title 3
+							.desc Lorem ipsum dolor sit amet, consectetur adipiscing elit
+					
+					.topic-card
+						.img
+							img(src="/assets/images/img.png" alt="Topic 4" width="235" height="150")
+						.info
+							.title Topic Title 4
+							.desc Lorem ipsum dolor sit amet, consectetur adipiscing elit

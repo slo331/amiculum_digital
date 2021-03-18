@@ -1,1 +1,32 @@
-//footer styles 
+//footer styles
+.footer {
+  padding: 3em 0 2em;
+
+  &-wrap {
+    position: relative;
+    text-align: center;
+    color: $gray;
+    font-size: calc-em(13);
+    display: flex;
+    justify-content: center;
+    padding: 2em 0 0;
+
+    &:before {
+      position: absolute;
+      width: 20%;
+      height: 2px;
+      content: "";
+      display: block;
+      background: $gray;
+      top: 0px;
+
+      @include tablet {
+        width: 10%;
+      }
+
+      @include desktop {
+        width: 3%;
+      }
+    }
+  }
+}

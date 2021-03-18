@@ -1,6 +1,7 @@
 mixin footer(spec)
-  - spec = spec || {}
-  - spec.__class = spec.__class || ''
+	- spec = spec || {}
+	- spec.__class = spec.__class || ''
 
-  div(class=spec.__class)&attributes(attributes)
-    p This is an example paragraph for the footer module
+	.footer(class=spec.__class)&attributes(attributes)
+		.footer-wrap
+			span (C) AMICULUM DIGITAL 2018

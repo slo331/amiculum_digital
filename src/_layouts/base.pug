@@ -1,5 +1,6 @@
 include ../_modules/organisms/header/header
 include ../_modules/molecules/modal/modal
+include ../_modules/organisms/footer/footer
 
 //- Custom Configuration
 block config
@@ -37,6 +38,9 @@ body
   #app.site-wrapper
     //- .container
     block content
+
+  footer
+    +footer()
 
   +modal()
 
