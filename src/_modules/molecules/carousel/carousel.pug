@@ -4,11 +4,12 @@ mixin carousel(spec)
   - spec.__carousel = spec.__carousel || ''
 
   section.carousel(class=spec.__class)&attributes(attributes)
-    .carousel-wrap
-      each item in spec.__carousel
-        .carousel-item
-          .carousel-container
-            .img
-              img(src=item.__img alt=item.__title width="160" height="112")
-            .title
-              span= item.__title
+    .container
+      .carousel-wrap
+        each item in spec.__carousel
+          .carousel-item
+            .carousel-container
+              .img
+                img(src=item.__img alt=item.__title width="160" height="112")
+              .title
+                span= item.__title

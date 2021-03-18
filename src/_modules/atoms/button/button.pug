@@ -9,7 +9,7 @@ mixin button(spec)
 	- spec.__iconBefore = spec.__iconBefore || ''
 
 	- var tag = 'button'
-	- var attributes = {"type" : "button"}
+	- var attributes = {"type" : "button", "aria-label": spec.__arialabel}
 
 	if spec.__type == 'anchor'
 		- tag = 'a'

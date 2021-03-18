@@ -8,13 +8,11 @@ mixin image-widget(spec)
 		+button({
 			"__text": "",
 			"__type": "button",
-			"__class": "btn--plus"
+			"__class": "btn--plus",
+			"__arialabel": "Open Modal"
 		})
 		.image(data-id=spec.__id)
-			img(src=spec.__img alt=spec__title width=spec.__width height=spec.__height)
-		.image-caption.vh(data-id=spec.__id)
+			img(src=spec.__img alt=spec.__title width=spec.__width height=spec.__height)
+		.image-caption.vh(data-id=spec.__id aria-hidden="true")
 			.title= spec.__title 
 			.desc!= spec.__caption
-
-
-		

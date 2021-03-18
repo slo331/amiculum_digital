@@ -18,13 +18,17 @@
     .image {
       display: block;
       width: 100%;
-      height: 450px;
+      height: 350px;
       position: relative;
+
+      @include desktop {
+        height: 450px;
+      }
 
       img {
         width: 100%;
         height: 100%;
-        object-fit: center;
+        object-fit: cover;
         object-position: center center;
       }
     }

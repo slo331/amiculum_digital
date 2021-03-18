@@ -13,15 +13,15 @@ block content
 	+carousel({
 		"__carousel": [
 			{
-				"__img": "/assets/images/img.png",
+				"__img": "/assets/images/img1.png",
 				"__title": "Feature Image or Slider - 1"
 			},
 			{
-				"__img": "/assets/images/img.png",
+				"__img": "/assets/images/img1.png",
 				"__title": "Feature Image or Slider - 2"
 			},
 			{
-				"__img": "/assets/images/img.png",
+				"__img": "/assets/images/img1.png",
 				"__title": "Feature Image or Slider - 3"
 			}
 		]
@@ -42,9 +42,114 @@ block content
 			})
 	
 	section.image-wrap
-		+image-widget({
-			"__id": "img-sample-1",
-			"__img": "/assets/images/img.png",
-			"__title": "Image Sample 1"
-		})
+		.container
+			+image-widget({
+				"__id": "img-sample-1",
+				"__img": "/assets/images/img.png",
+				"__width": "800",
+				"__height": "450",
+				"__title": "Image Sample 1",
+				"__caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Ut a dolor convallis, scelerisque leo eu, tincidunt eros. Vestibulum quis ullamcorper augue. Cras vitae mattis libero, et cursus neque. Sed tincidunt fermentum vehicula."
+			})
+	
+	section.gallery-wrap
+		.container
+			.head
+				.title Modal 
+				.desc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. 
+
+			.row 
+				.gallery-item.col-md-12.col-sm-12.col-xs-12 
+					+image-widget({
+						"__id": "img-gallery-1",
+						"__img": "/assets/images/img.png",
+						"__width": "800",
+						"__height": "450",
+						"__title": "Image Gallery 1",
+						"__caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Ut a dolor convallis, scelerisque leo eu, tincidunt eros. Vestibulum quis ullamcorper augue. Cras vitae mattis libero, et cursus neque. Sed tincidunt fermentum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Ut a dolor convallis, scelerisque leo eu, tincidunt eros. Vestibulum quis ullamcorper augue. Cras vitae mattis libero, et cursus neque. Sed tincidunt fermentum vehicula."
+					})
+				.gallery-item.col-md-6.col-sm-6.col-xs-12 
+					+image-widget({
+						"__id": "img-gallery-2",
+						"__img": "/assets/images/img.png",
+						"__width": "800",
+						"__height": "450",
+						"__title": "Image Gallery 2",
+						"__caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Ut a dolor convallis, scelerisque leo eu, tincidunt eros. Vestibulum quis ullamcorper augue. Cras vitae mattis libero, et cursus neque. Sed tincidunt fermentum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Ut a dolor convallis, scelerisque leo eu, tincidunt eros. Vestibulum quis ullamcorper augue. Cras vitae mattis libero, et cursus neque. Sed tincidunt fermentum vehicula."
+					})
+				.gallery-item.col-md-6.col-sm-6.col-xs-12 
+					+image-widget({
+						"__id": "img-gallery-3",
+						"__img": "/assets/images/img.png",
+						"__width": "800",
+						"__height": "450",
+						"__title": "Image Gallery 3",
+						"__caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Ut a dolor convallis, scelerisque leo eu, tincidunt eros. Vestibulum quis ullamcorper augue. Cras vitae mattis libero, et cursus neque. Sed tincidunt fermentum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Ut a dolor convallis, scelerisque leo eu, tincidunt eros. Vestibulum quis ullamcorper augue. Cras vitae mattis libero, et cursus neque. Sed tincidunt fermentum vehicula."
+					})
+
+	section.breakout-area
+		.container 
+			.row
+				.area.col-md-4.col-sm-4.col-xs-12
+					.head 
+						.title Breakout Area 
+						.desc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. 
+				.area.col-md-8.col-sm-8.col-xs-12
+					.img-wrap
+						img(src="https://via.placeholder.com/900x400.png?text=Image+Placeholder" alt="Sample Image" width="600" height="300")
+
+	section.image-wrap
+		.container
+			.head
+				.title More Layouts
+
+			+image-widget({
+				"__id": "img-sample-1",
+				"__img": "/assets/images/img.png",
+				"__width": "800",
+				"__height": "450",
+				"__title": "More Layouts Image - 1",
+				"__caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Ut a dolor convallis, scelerisque leo eu, tincidunt eros. Vestibulum quis ullamcorper augue. Cras vitae mattis libero, et cursus neque. Sed tincidunt fermentum vehicula."
+			})
+
+	section.gallery2-wrap
+		.container
+			.head
+				.title Modal 
+				.desc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. 
+
+			.row 
+				.gallery-item.col-md-12.col-sm-12.col-xs-12 
+					.row
+						.item.col-md-9.col-sm-9.col-xs-12
+							+image-widget({
+								"__id": "img-gallery2-1",
+								"__img": "/assets/images/img.png",
+								"__width": "800",
+								"__height": "450",
+								"__title": "Image Gallery-2 1",
+								"__caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Ut a dolor convallis, scelerisque leo eu, tincidunt eros. Vestibulum quis ullamcorper augue. Cras vitae mattis libero, et cursus neque. Sed tincidunt fermentum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Ut a dolor convallis, scelerisque leo eu, tincidunt eros. Vestibulum quis ullamcorper augue. Cras vitae mattis libero, et cursus neque. Sed tincidunt fermentum vehicula."
+							})
+						.item.col-md-3.col-sm-3.col-xs-12
+							.caption-wrap 
+								.title Image Caption
+								.desc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui 
+				.gallery-item.col-md-6.col-sm-6.col-xs-12 
+					+image-widget({
+						"__id": "img-gallery2-2",
+						"__img": "/assets/images/img.png",
+						"__width": "800",
+						"__height": "450",
+						"__title": "Image Gallery-2 2",
+						"__caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Ut a dolor convallis, scelerisque leo eu, tincidunt eros. Vestibulum quis ullamcorper augue. Cras vitae mattis libero, et cursus neque. Sed tincidunt fermentum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Ut a dolor convallis, scelerisque leo eu, tincidunt eros. Vestibulum quis ullamcorper augue. Cras vitae mattis libero, et cursus neque. Sed tincidunt fermentum vehicula."
+					})
+				.gallery-item.col-md-6.col-sm-6.col-xs-12 
+					+image-widget({
+						"__id": "img-gallery2-3",
+						"__img": "/assets/images/img.png",
+						"__width": "800",
+						"__height": "450",
+						"__title": "Image Gallery-2 3",
+						"__caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Ut a dolor convallis, scelerisque leo eu, tincidunt eros. Vestibulum quis ullamcorper augue. Cras vitae mattis libero, et cursus neque. Sed tincidunt fermentum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. Ut a dolor convallis, scelerisque leo eu, tincidunt eros. Vestibulum quis ullamcorper augue. Cras vitae mattis libero, et cursus neque. Sed tincidunt fermentum vehicula."
+					})
 			
