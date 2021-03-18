@@ -25,4 +25,73 @@
 
 .btn {
 	@extend %btn;
+
+  &--plus {
+    padding: 0;
+    border-radius: none;
+    width: 20x;
+    height: 20px;
+    padding: 24px;
+    line-height: 0;
+    color: $white;
+    background: transparent;
+
+    &::before,
+    &::after {
+      position: absolute;
+      right: 24px;
+      top: 13px;
+      content: '';
+      height: 20px;
+      width: 2px;
+      background: $white;
+      transition: all .2s ease-in-out;
+    }
+
+    &:before {
+      transform: rotate(90deg);
+    }
+
+    &:after {
+      transform: rotate(0deg);
+    }
+
+    &:hover,
+    &:focus {
+      &:before,
+      &:after {
+        background: $gray;
+      }
+    }
+  }
+
+  &--modal_close {
+    padding: 0;
+    border-radius: none;
+    width: 24px;
+    height: 24px;
+    line-height: 0;
+    color: $white;
+    background: transparent;
+    border: none;
+
+    &::before,
+    &::after {
+      position: absolute;
+      right: 10px;
+      top: 0;
+      content: '';
+      height: 24px;
+      width: 2px;
+      background: $gray;
+    }
+
+    &:before {
+      transform: rotate(45deg);
+    }
+
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
 }

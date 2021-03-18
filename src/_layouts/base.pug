@@ -1,4 +1,5 @@
 include ../_modules/organisms/header/header
+include ../_modules/molecules/modal/modal
 
 //- Custom Configuration
 block config
@@ -35,6 +36,8 @@ body
   .site-wrapper
     .container
       block content
+
+  +modal()
 
   block scripts
     script(src= '/assets/scripts/main.js')

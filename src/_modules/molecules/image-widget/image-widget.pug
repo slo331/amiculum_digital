@@ -1,6 +1,20 @@
-mixin image-widget(spec)
-  - spec = spec || {}
-  - spec.__class = spec.__class || ''
+include ../../atoms/button/button
 
-  div(class=spec.__class)&attributes(attributes)
-    p This is an example paragraph for the image-widget module
+mixin image-widget(spec)
+	- spec = spec || {}
+	- spec.__class = spec.__class || ''
+
+	.image-widget(class=spec.__class)&attributes(attributes)
+		+button({
+			"__text": "",
+			"__type": "button",
+			"__class": "btn--plus"
+		})
+		.image(data-id=spec.__id)
+			img(src=spec.__img alt=spec__title width=spec.__width height=spec.__height)
+		.image-caption.vh(data-id=spec.__id)
+			.title= spec.__title 
+			.desc!= spec.__caption
+
+
+		

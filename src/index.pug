@@ -3,6 +3,7 @@ extends _layouts/base
 include ./_modules/atoms/button/button
 include ./_modules/molecules/carousel/carousel
 include ./_modules/molecules/rte/rte
+include ./_modules/molecules/image-widget/image-widget
 
 block config
 	- var page = 'homepage'
@@ -12,29 +13,38 @@ block content
 	+carousel({
 		"__carousel": [
 			{
-				"img": "/assets/images/img.png",
-				"title": "Feature Image or Slider - 1"
+				"__img": "/assets/images/img.png",
+				"__title": "Feature Image or Slider - 1"
 			},
 			{
-				"img": "/assets/images/img.png",
-				"title": "Feature Image or Slider - 2"
+				"__img": "/assets/images/img.png",
+				"__title": "Feature Image or Slider - 2"
 			},
 			{
-				"img": "/assets/images/img.png",
-				"title": "Feature Image or Slider - 3"
+				"__img": "/assets/images/img.png",
+				"__title": "Feature Image or Slider - 3"
 			}
 		]
 	})
 
-	+rte()(style="text-align: center")
-		h1 Project
+	//- +rte()(style="text-align: center")
+	section.project
+		.container
+			.project-title
+				.title Project 
+				.subtitle Test for Responsive Design 
+			
+			.content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in.
 
-		p Test for Responsive Design
-
-		h2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta. Fusce vel ultricies purus. In consectetur nibh odio, mattis varius purus faucibus in. 
-
-		+button({
-			"__type": "button",
-			"__text": "Read more",
-			"__class": "read-more"
+			+button({
+				"__type": "button",
+				"__text": "Read More"
+			})
+	
+	section.image-wrap
+		+image-widget({
+			"__id": "img-sample-1",
+			"__img": "/assets/images/img.png",
+			"__title": "Image Sample 1"
 		})
+			

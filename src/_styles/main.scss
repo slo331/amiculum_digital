@@ -25,6 +25,7 @@ $ultra-bold: 900;
 // Colours
 $black: #1A1A1A;
 $gray: #2E2E2E;
+$gray2: #c3c3c3;
 $white: #ffffff;
 
 // Mixins
@@ -80,6 +81,7 @@ body {
   margin: 0;
   padding: 0;
   background: $black;
+  line-height: 1.4;
 
   .container {
     position: relative;
@@ -101,11 +103,58 @@ body {
     letter-spacing: 15px;
     color: $white;
   }
+
+  .project {
+    color: $white;
+    margin: 5em 0;
+
+    .container {
+      text-align: center;
+    }
+
+    &-title {
+      margin: 0 0 3em;
+    }
+
+    .title {
+      font-size: calc-em(48);
+      font-weight: $bold;
+      text-transform: uppercase;
+      letter-spacing: 8px;
+      margin: 0 0 10px;
+
+      @include desktop {
+        font-size: calc-em(64);
+        letter-spacing: 15px;
+      }
+    }
+
+    .subtitle {
+      text-transform: uppercase;
+      font-size: calc-em(12);
+      letter-spacing: 5px;
+    }
+
+    .content {
+      padding: 0;
+      font-size: calc-em(18);
+      width: 100%;
+      margin: 2em auto;
+
+      @include desktop {
+        width: 90%;
+        padding: 0 1em;
+        font-size: calc-em(24);
+      }
+    }
+  }
 }
 
 
 
 @import "../_modules/atoms/button/button";
+@import "../_modules/molecules/modal/modal";
 @import "../_modules/molecules/carousel/carousel";
 @import "../_modules/molecules/rte/rte";
+@import "../_modules/molecules/image-widget/image-widget";
 @import "../_modules/organisms/header/header";

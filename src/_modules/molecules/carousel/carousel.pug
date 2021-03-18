@@ -9,5 +9,6 @@ mixin carousel(spec)
         .carousel-item
           .carousel-container
             .img
-              img(src=item.img alt=item.title width="160" height="112")
-            .title= item.title
+              img(src=item.__img alt=item.__title width="160" height="112")
+            .title
+              span= item.__title
